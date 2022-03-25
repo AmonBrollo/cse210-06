@@ -15,18 +15,15 @@ It was inspired by Atari Space Invaders, a popular arcade game -->
 ---
 
 - Choose your controls MOUSE or KEYBOARD.
-- Player can move up, down, left and right...
-
 - If chooses KEYBOARD player moves using the arroy keys UP, DOWN, LEFT and RIGHT.
 - SPACE key to shoot and BACKSPACE to "QUIT" the game.
-
-- If chooses MOUSE player may use mouse as a controller to move LEFT CLICK to shoot and RIGHT CLICK to "QUIT".
-
-- If there no 5 hearts left a "game over" message is displayed in the middle of the screen.
-
-- If the 1 enemy passes your line you will loose a heart.
-
+- If chooses MOUSE player may use mouse as a controller to move, LEFT CLICK to shoot and RIGHT CLICK to "QUIT".
+- If there are no hearts left a "game over" message is displayed in the middle of the screen.
+- If an enemy passes your lane you will loose 1 heart.
+- There are 6 hearts to be your lives.
 - You can dodge enemy missile using arrow keys and mouse.
+- If you killed an enemy points will be added.
+- Protect your territory by not passing them to your lane!!!
 
 ## Getting Started
 
