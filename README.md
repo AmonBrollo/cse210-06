@@ -1,14 +1,15 @@
-<!-- # SPACE and CONQUER
+# SPACE and CONQUER
 
 > The force will be with you always
-> - Obi-Wan Kenobi - -->
+>
+> - Obi-Wan Kenobi -
 
 ## Overview
 
 ---
 
-<!-- A space jet defends his galaxy from evil space invaders.
-It was inspired by Atari Space Invaders, a popular arcade game -->
+A space jet defends his galaxy from evil space invaders.
+It was inspired by Atari Space Invaders, a popular arcade game
 
 ## Rules
 
