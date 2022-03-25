@@ -23,6 +23,8 @@ It was inspired by Atari Space Invaders, a popular arcade game
 - If an enemy passes your lane you will loose 1 heart.
 - There are 6 hearts to be your lives.
 - You can dodge enemy missile using arrow keys and mouse.
+- If hit by an enemy missile or bump with them your green life line will be reduced.
+- If your "GREEN" life line was totally "RED" 1 heart should be deducted.
 - If you killed an enemy points will be added.
 - Protect your territory by not passing them to your lane!!!
 
