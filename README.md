@@ -14,20 +14,19 @@ It was inspired by Atari Space Invaders, a popular arcade game -->
 
 ---
 
-<!-- Player can move up, down, left and right...
-Choose your controls MOUSE or KEYBOARD.
+- Choose your controls MOUSE or KEYBOARD.
+- Player can move up, down, left and right...
 
-If chooses KEYBOARD player moves using the arroy keys UP, DOWN, LEFT and RIGHT.
-SPACE key to shoot and BACKSPACE to "QUIT" the game.
+- If chooses KEYBOARD player moves using the arroy keys UP, DOWN, LEFT and RIGHT.
+- SPACE key to shoot and BACKSPACE to "QUIT" the game.
 
-If chooses MOUSE player may use mouse as a controller to move LEFT CLICK to shoot and RIGHT CLICK to "QUIT".
+- If chooses MOUSE player may use mouse as a controller to move LEFT CLICK to shoot and RIGHT CLICK to "QUIT".
 
-If there no 5 hearts left a "game over" message is displayed in the middle of the screen.
+- If there no 5 hearts left a "game over" message is displayed in the middle of the screen.
 
-If the 1 enemy passes your line you will loose a heart.
+- If the 1 enemy passes your line you will loose a heart.
 
-You can dodge enemy missile using arrow keys and mouse.
- -->
+- You can dodge enemy missile using arrow keys and mouse.
 
 ## Getting Started
 
@@ -43,11 +42,11 @@ You can dodge enemy missile using arrow keys and mouse.
 
 The project files and folders are organized as follows:
 
-<!-- root (project root folder)
+root (project root folder)
 +-- space_and_conquer (source code for game)
 +-- game (specific game classes)
 +-- **main**.py (entry point for program)
-+-- README.md (general info) -->
++-- README.md (general info)
 
 ## Required Technologies
 
