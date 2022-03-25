@@ -34,8 +34,7 @@ You can dodge enemy missile using arrow keys and mouse.
 ---
 
 ```
-- pip install pygame => to install PyGame
-
+- Type 'pip install pygame' on your terminal to install PyGame library
 ```
 
 ## Project Structure
@@ -54,7 +53,7 @@ The project files and folders are organized as follows:
 
 ---
 
-- Framework - PyGame should be installed
+- Library - PyGame should be installed
 - Python version 3.6 or latest should be installed
 - Other modules - time, os, sys, ctypes, etc.
 
