@@ -65,7 +65,7 @@ This will be the design of our game
 
 ---
 
-- Amon Brollo
+- Amon Brollo (amonbrollo@gmail.com)
 - Giovanni Bonfim
 - Isiakpona Chuks
 - Jason McLaughlin (email: jasnatbyui@gmail.com)
