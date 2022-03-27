@@ -81,7 +81,7 @@ def main():
 
         exit_btn.draw((config.ending_x - 75, config.ending_y - 40), True, True)
 
-        Assets.image.draw(Image.TITLE_LOGO, (config.center_x, 50), True)
+        Assets.image.draw(Image.TITLE_LOGO, (config.center_x, 10), True)
 
         pygame.display.flip()
         config.clock.tick(config.FPS)  # capping frame rate to 60
@@ -107,74 +107,74 @@ def main():
                         config.monitor_size[0], config.monitor_size[1])
                     display_cfg.toggle_full_screen()
 
-        # Mouse click events
-        if event.type == pygame.MOUSEBOTTOMDOWN:
-            if event.button == 1:
+            # Mouse click events
+            if event.type == pygame.MOUSEBOTTOMDOWN:
+                if event.button == 1:
+                    if mouse_btn.isOver():
+                        game(True)
+                    if keyboard_btn.isOver():
+                        game()
+                    if control_btn.isOver():
+                        controls()
+                    if trophy_btn.isOver():
+                        score_board()
+                    if ships_btn.isOver():
+                        ships()
+                    if settings_btn.isOver():
+                        settings()
+                    if exit_btn.isOver():
+                        run = False
+
+            # Mouse hover events
+            if event.type == pygame.MOUSEMOTION:
                 if mouse_btn.isOver():
-                    game(True)
+                    mouse_btn.outline = True
+                else:
+                    mouse_btn.outline = False
+
                 if keyboard_btn.isOver():
-                    game()
+                    keyboard_btn.outline = True
+                else:
+                    keyboard_btn.outline = False
+
                 if control_btn.isOver():
-                    controls()
+                    control_btn.outline = True
+                else:
+                    control_btn.outline = False
+
                 if trophy_btn.isOver():
-                    score_board()
-                if ships_btn.isOver():
-                    ships()
+                    trophy_btn.outline = True
+                else:
+                    trophy_btn.outline = False
+
                 if settings_btn.isOver():
-                    settings()
+                    settings_btn.outline = True
+                else:
+                    settings_btn.outline = False
+
+                if ships_btn.isOver():
+                    ships_btn.outline = True
+                else:
+                    ships_btn.outline = False
+
                 if exit_btn.isOver():
-                    run = False
+                    exit_btn.outline = True
+                else:
+                    exit_btn.outline = False
 
-        # Mouse hover events
-        if event.type == pygame.MOUSEMOTION:
-            if mouse_btn.isOver():
-                mouse_btn.outline = True
-            else:
-                mouse_btn.outline = False
+        keys = pygame.key.get_pressed()
+        if keys[pygame.K_ESCAPE] or keys[pygame.K_q]:
+            run = False
 
-            if keyboard_btn.isOver():
-                keyboard_btn.outline = True
-            else:
-                keyboard_btn.outline = False
+        if keys[pygame.K_c]:
+            controls()
 
-            if control_btn.isOver():
-                control_btn.outline = True
-            else:
-                control_btn.outline = False
+        if keys[pygame.K_s]:
+            score_board()
 
-            if trophy_btn.isOver():
-                trophy_btn.outline = True
-            else:
-                trophy_btn.outline = False
+    pygame.guit()
+    sys.exit(0)
 
-            if settings_btn.isOver():
-                settings_btn.outline = True
-            else:
-                settings_btn.outline = False
-
-            if ships_btn.isOver():
-                ships_btn.outline = True
-            else:
-                ships_btn.outline = False
-
-            if exit_btn.isOver():
-                exit_btn.outline = True
-            else:
-                exit_btn.outline = False
-
-    keys = pygame.key.get_pressed()
-    if keys[pygame.K_ESCAPE] or keys[pygame.K_q]:
-        run = False
-
-    if keys[pygame.K_c]:
-        controls()
-
-    if keys[pygame.K_s]:
-        score_board()
-
-
-pygame.guit()
-sys.exit(0)
 
 if __name__ == "__main__":
     main()
