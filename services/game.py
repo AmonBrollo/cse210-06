@@ -48,3 +48,55 @@ def game(isMouse=False):
     boss_entry = True
 
     pause_btn = IconButton(Image.PAUSE_IMAGE)
+
+    explosion_group.empty()
+
+    def redraw_window():
+        bg_obj.update()
+        bg_obj.render()
+
+        player.draw()
+
+        for enemyShip in enemies:
+            enemyShip.draw()
+
+        if pause == True:
+            play_btn.draw((config.center_x, 45), True, True)
+
+        else:
+            pause_btn.draw((config.center_x, 45), True, True)
+
+        # Lives
+        for index in range(1, lives + 1):
+            Assets.image.draw(Image.HEART_IMAGE,
+                            (config.starting_x + 37 * index - 7, 30))
+
+        # Draw Text
+        Assets.text.draw(f'{player.get_level()} / 10' , sub_small_font, Colors.CYAN,
+                        (config.starting_x + 33, 75))
+
+        score = player.get_score()
+        leftScoreIdx = 0
+        if score >= 100 and score < 1000:
+            leftScoreIdx = 1
+
+        elif score >= 1000:
+            leftScoreIdx = 2
+
+        score_label = Assets.text.render(
+            f'{score}', sub_font, Colors.GREEN)
+        Assets.text.drawSurface(
+            score_label, (config.ending_x - score_label.get_width() - 30, 20))
+        Assets.image.draw(Image.STAR_IMAGE,
+                        (config.ending_x - Image.SKULL_IMAGE.get_width() - 85 - leftScoreIdx*23, 26))
+
+        kills = player.get_kills()
+        leftKillsIdx = 0
+        if kills >= 100:
+            leftKillsIdx = 1
+
+        Assets.image.draw(Image.SKULL_IMAGE,
+                        (config.ending_x - Image.SKULL_IMAGE.get_width() - 30, 75))                          
+
+        if win:
+            scores.append(True,)
