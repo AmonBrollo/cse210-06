@@ -25,8 +25,8 @@ class Path:
 
 class Font:
     # Font Vars
-    edit_undo_font = Assets.font.load(Path.FONT_PATH, 'edit_undo.ttf')
-    neue_font = Assets.font.load(Path. FONT_PATH, 'neue.ttf')
+    edit_undo_font = Assets.font.load(Path.FONT_PATH, 'nasa.ttf')
+    neue_font = Assets.font.load(Path. FONT_PATH, 'beat.ttf')
     karmatic_arcade_font = Assets.font.load(
         Path.FONT_PATH, 'karmatic_arcade.ttf')
 
