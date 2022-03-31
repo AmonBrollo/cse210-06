@@ -62,7 +62,7 @@ def main():
         keyboard_btn.draw(
             (config.center_x + 15, config.center_y + 42), (195, 66))
 
-        Assets.text.draw('Start Game', title_font, Colors.WHITE,
+        Assets.text.draw('Play Game', title_font, Colors.WHITE,
                          (config.center_x, config.center_y-10), True, True)
 
         # Control Page
