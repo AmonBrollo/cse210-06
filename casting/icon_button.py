@@ -17,7 +17,7 @@ class IconButton:
         new_pos = pos
 
         if isCenterX == True:
-            new_pos (new_pos[0] - self.image.get_width()//2, new_pos[1])
+            new_pos = (new_pos[0] - self.image.get_width()//2, new_pos[1])
 
         if isCenterY == True:
             new_pos = (new_pos[0], new_pos[1] - self.image.get_height()//2)
