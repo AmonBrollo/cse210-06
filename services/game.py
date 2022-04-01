@@ -98,9 +98,9 @@ def game(isMouse=False):
         kills_label = Assets.text.render(
             f'{kills}', sub_font, Colors.RED)
         Assets.text.drawSurface(
-            kills_label, (config.ending_x - kills_label.get_width() - 30, 20))
+            kills_label, (config.ending_x - kills_label.get_width() - 30, 65))
         Assets.image.draw(Image.SKULL_IMAGE,
-                          (config.ending_x - Image.SKULL_IMAGE.get_width() - 30, 75))
+                          (config.ending_x - Image.SKULL_IMAGE.get_width() - 85 - leftKillsIdx*23, 75))
 
         if win:
             scores.append(True, player.get_level(),
