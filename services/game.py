@@ -67,7 +67,7 @@ def game(isMouse=False):
 
         # Lives
         for index in range(1, lives + 1):
-            Assets.image.draw(Image.HEART_IMAGE,
+            Assets.image.draw(Image.HEART_RANGE,
                               (config.starting_x + 37 * index - 7, 30))
 
         # Draw Text
