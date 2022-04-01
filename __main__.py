@@ -108,7 +108,7 @@ def main():
                     display_cfg.toggle_full_screen()
 
             # Mouse click events
-            if event.type == pygame.MOUSEBOTTOMDOWN:
+            if event.type == pygame.MOUSEBUTTONDOWN:
                 if event.button == 1:
                     if mouse_btn.isOver():
                         game(True)
