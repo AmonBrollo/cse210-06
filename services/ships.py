@@ -16,7 +16,7 @@ def ships():
     go_back_btn = IconButton(Image.GO_BACK_IMAGE)
 
     NEW_HEART_IMAGE = pygame.transform.scale(
-        Image.HEART_IMAGE, (Image.HEART_IMAGE.get_width()*3/4, Image.HEART_IMAGE.get_height()*3/4))
+        Image.HEART_RANGE, (Image.HEART_RANGE.get_width()*3/4, Image.HEART_RANGE.get_height()*3/4))
 
     run = True
     while run:
