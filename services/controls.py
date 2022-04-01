@@ -69,7 +69,7 @@ def controls():
 
         Assets.text.draw('KEYBOARD', control_title_font_2, Colors.ORANGE,
                          (config.center_x-265, 380))
-        Assets.image.draw(Image.BACKSPACE_KEY, (config.center_x-20, 470))
+        Assets.image.draw(Image.BACKSPACE_KEYS, (config.center_x-20, 470))
         Assets.text.draw('BACKSPACE', control_font, Colors.WHITE,
                          (config.center_x-265, 460))
 
