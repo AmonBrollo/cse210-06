@@ -1,3 +1,4 @@
+from os import kill
 import pygame
 import sys
 import time
@@ -94,6 +95,10 @@ def game(isMouse=False):
         if kills >= 100:
             leftKillsIdx = 1
 
+        kills_label = Assets.text.render(
+            f'{kills}', sub_font, Colors.RED)
+        Assets.text.drawSurface(
+            kills_label, (config.ending_x - kills_label.get_width() - 30, 20))
         Assets.image.draw(Image.SKULL_IMAGE,
                           (config.ending_x - Image.SKULL_IMAGE.get_width() - 30, 75))
 
@@ -262,8 +267,7 @@ def paused(player, isMouse):
                             pygame.mouse.set_visible(True)
                         unpause()
                     if home_btn.isOver():
-                        scores.append(False, player.get_level(),
-                                      player.get_score(), player.get_kills())
+                        scores.append(False, player.get_level(), player.get_score(), player.get_kills())
                         player.run = False
                         unpause()
                         audio_cfg.play_music(Path.MENU_MUSIC_PATH)
