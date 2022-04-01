@@ -8,10 +8,10 @@ from director import config
 class Assets:
     class text:
         def render(text, font, color):
-            return text.render(text, 1, color)
+            return font.render(text, 1, color)
 
         def draw(text, font, color, pos, isCenterX=False, isCenterY=False, underline=False):
-            text_label = text.render(text, 1, color)
+            text_label = font.render(text, 1, color)
 
             if isCenterX:
                 pos = (pos[0] - text_label.get_width()//2, pos[1])
