@@ -1,6 +1,4 @@
 import sys
-from tkinter.tix import Tree
-from turtle import title
 import pygame
 import argparse
 
@@ -41,7 +39,7 @@ def main():
     control_btn = IconButton(Image.CONTROL_IMAGE, Text.CONTROLS)
     ships_btn = IconButton(Image.SHIPS_IMAGE, Text.SHIPS)
     trophy_btn = IconButton(Image.TROPHY_IMAGE, Text.SCOREBOARD)
-    settings_btn = IconButton(Image.TOOLBOX_IMAGE)
+    settings_btn = IconButton(Image.EXIT_IMAGE)
 
     exit_btn = IconButton(Image.EXIT_IMAGE)
 
@@ -52,7 +50,7 @@ def main():
         slow_bg_obj.render()
 
         # Ships
-        Assets.image.draw(Image.BOSS_SHIP, (config.center_x, 110), True)
+        Assets.image.draw(Image.BOSS_SHIP, (config.center_x, 200), True)
         Assets.image.draw(Image.FLAME_LASER, (config.center_x, 360), True)
         Assets.image.draw(Image.PLAYER_SPACE_SHIP, (config.center_x-46, 575))
         Assets.image.draw(Image.PLAYER_LASER, (config.center_x, 490), True)
