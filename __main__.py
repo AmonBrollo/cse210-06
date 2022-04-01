@@ -39,7 +39,7 @@ def main():
     control_btn = IconButton(Image.CONTROL_IMAGE, Text.CONTROLS)
     ships_btn = IconButton(Image.SHIPS_IMAGE, Text.SHIPS)
     trophy_btn = IconButton(Image.TROPHY_IMAGE, Text.SCOREBOARD)
-    settings_btn = IconButton(Image.TOOLBOX_IMAGE)
+    settings_btn = IconButton(Image.TOOLBOX_IMAGE, Text.SETTINGS)
 
     exit_btn = IconButton(Image.EXIT_IMAGE)
 
