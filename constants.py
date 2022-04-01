@@ -5,7 +5,7 @@ from scripting.resource_path import resource_path
 from scripting.assets import Assets
 
 # List of all game sounds
-soundlist = []
+soundList = []
 
 # Initialize Sound System
 pygame.mixer.init()
@@ -13,7 +13,7 @@ pygame.mixer.init()
 
 class Path:
     # Path Vars
-    FONT_PATH = os.path.join('assests', 'fonts')
+    FONT_PATH = os.path.join('assets', 'fonts')
     EXPLOSION_PATH = os.path.join('assets', 'graphics', 'explosion')
     GRAPHICS_PATH = os.path.join('assets', 'graphics')
     SOUND_PATH = os.path.join('assets', 'sounds')
@@ -66,7 +66,7 @@ class Image:
     SHIPS_IMAGE = Assets.image.scale(Path.GRAPHICS_PATH, 'medium.png', 5/6)
     SHIPS_IMAGE_2 = Assets.image.scale(Path.GRAPHICS_PATH, 'hard.png', 1/4)
     TOOLBOX_IMAGE = Assets.image.scale(Path.GRAPHICS_PATH, 'toolbox.png', 1/2)
-    TOOLS_IMAGE = Assets.image.scale(Path.GAME_MUSIC_PATH, 'tools.png', 1/4)
+    TOOLS_IMAGE = Assets.image.scale(Path.GRAPHICS_PATH, 'tools.png', 1/4)
     TOOLS_IMAGE = pygame.transform.rotate(TOOLS_IMAGE, -45)
 
     GO_BACK_IMAGE = Assets.image.scale(
@@ -115,32 +115,30 @@ class Image:
     F_KEY = Assets.image.scale(Path.GRAPHICS_PATH, 'f_key.png', 1/2)
     M_KEY = Assets.image.scale(Path.GRAPHICS_PATH, 'mute_key.png', 1/2)
 
-    class Sound:
-        PLAYER_LASER_SOUND = Assets.sounds.load(
-            Path.SOUND_PATH, 'ownlaser.wav')
-        ENEMY_LASER_SOUND = Assets.sounds.load(
-            Path.SOUND_PATH, 'enemylaser.wav')
-        EXPLODE_SOUND = Assets.sounds.load(Path.SOUND_PATH, 'explode.wav')
-        LASER_HIT_SOUND = Assets.sounds.load(Path.SOUND_PATH, 'laser_hit.wav')
+class Sound:
+    PLAYER_LASER_SOUND = Assets.sound.load(Path.SOUND_PATH, 'ownlaser.wav')
+    ENEMY_LASER_SOUND = Assets.sound.load(Path.SOUND_PATH, 'enemylaser.wav')
+    EXPLODE_SOUND = Assets.sound.load(Path.SOUND_PATH, 'explode.wav')
+    LASER_HIT_SOUND = Assets.sound.load(Path.SOUND_PATH, 'laser_hit.wav')
 
-    class Colors:
-        WHITE = (255, 255, 255)
-        BLACK = (0, 0, 0)
-        BACKGROUND_BLACK = (7, 8, 16)
-        BLUE = (0, 0, 255)
-        GREEN = (0, 255, 0)
-        GREEN2 = (0, 209, 0)
-        RED = (255, 0, 0)
-        YELLOW = (255, 255, 0)
-        CYAN = (0, 255, 255)
-        MAGENTA = (255, 0, 255)
-        PURPLE = (131, 1, 123)
-        ORANGE = (238, 98, 17)
-        GREY = (200, 200, 200)
-        TRANS = (1, 1, 1)
+class Colors:
+    WHITE = (255, 255, 255)
+    BLACK = (0, 0, 0)
+    BACKGROUND_BLACK = (7, 8, 16)
+    BLUE = (0, 0, 255)
+    GREEN = (0, 255, 0)
+    GREEN2 = (0, 209, 0)
+    RED = (255, 0, 0)
+    YELLOW = (255, 255, 0)
+    CYAN = (0, 255, 255)
+    MAGENTA = (255, 0, 255)
+    PURPLE = (131, 1, 123)
+    ORANGE = (238, 98, 17)
+    GREY = (200, 200, 200)
+    TRANS = (1, 1, 1)
 
-    class Text:
-        SHIPS = 'SHIPS'
-        SETTINGS = 'SETTINGS'
-        CONTROLS = 'CONTROLS'
-        SCOREBOARD = 'SCOREBOARD'
+class Text:
+    SHIPS = 'SHIPS'
+    SETTINGS = 'SETTINGS'
+    CONTROLS = 'CONTROLS'
+    SCOREBOARD = 'SCOREBOARD'

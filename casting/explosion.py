@@ -2,7 +2,8 @@ import os
 import pygame
 
 from scripting.assets import Assets
-from constants import Path, Sound
+from constants import Path
+from constants import Sound
 
 explosion_group = pygame.sprite.Group()
 
